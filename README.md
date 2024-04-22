@@ -1,52 +1,43 @@
+
 # Twitter-Sentiment-Analysis
-It is a Natural Language Processing Problem where Sentiment Analysis is done by Classifying the Positive tweets from negative tweets by machine learning models for classification,  text mining, text analysis, data analysis and data visualization
+It is a Natural Language Processing Problem where Sentiment Analysis is done by classifying tweets into positive or negative sentiments using machine learning models for classification, text mining, text analysis, data analysis, and data visualization.
 
 # Introduction
 
-Natural Language Processing (NLP) is a hotbed of research in data science these days and one of the most common applications of NLP is sentiment analysis. From opinion polls to creating entire marketing strategies, this domain has completely reshaped the way businesses work, which is why this is an area every data scientist must be familiar with.
+Natural Language Processing (NLP) is a flourishing field in data science today, and sentiment analysis stands out as one of its most prevalent applications. From market research to customer feedback analysis, sentiment analysis has revolutionized decision-making processes across industries. It's a domain every data scientist should be well-versed in.
 
-Thousands of text documents can be processed for sentiment (and other features including named entities, topics, themes, etc.) in seconds, compared to the hours it would take a team of people to manually complete the same task. 
+Processing thousands of text documents for sentiment analysis can now be done in seconds, a task that would take hours for a team of individuals to complete manually.
 
-We will do so by following a sequence of steps needed to solve a general sentiment analysis problem. We will start with preprocessing and cleaning of the raw text of the tweets. Then we will explore the cleaned text and try to get some intuition about the context of the tweets. After that, we will extract numerical features from the data and finally use these feature sets to train models and identify the sentiments of the tweets.
+We'll embark on a journey to tackle a sentiment analysis problem, beginning with preprocessing and cleaning of raw tweet text. We'll then dive into exploring the cleaned text, gaining insights into the sentiment conveyed by the tweets. Next, we'll extract numerical features from the data and employ these feature sets to train models for sentiment classification.
 
-This is one of the most interesting challenges in NLP so I’m very excited to take this journey with you!
+This journey promises to be one of the most intriguing challenges in NLP, and I'm thrilled to have you accompany me!
 
 # Understand the Problem Statement
 
-Let’s go through the problem statement once as it is very crucial to understand the objective before working on the dataset. The problem statement is as follows:
+Before delving into the technical aspects, let's dissect the problem statement. The objective of this task is to discern the sentiment of tweets. Unlike previous endeavors focusing on controversial topics, our goal now is to classify tweets as either positive or negative based on their sentiment.
 
-The objective of this task is to detect hate speech in tweets. For the sake of simplicity, we say a tweet contains hate speech if it has a racist or sexist sentiment associated with it. So, the task is to classify racist or sexist tweets from other tweets.
-
-Formally, given a training sample of tweets and labels, where label ‘1’ denotes the tweet is racist/sexist and label ‘0’ denotes the tweet is not racist/sexist, your objective is to predict the labels on the given test dataset.
-
-Note: The evaluation metric from this practice problem is F1-Score.
-
-Take a look at the pictures below depicting two scenarios of an office space – one is untidy and the other is clean and organized. 
+Formally, given a training sample of tweets and corresponding labels, where label '1' denotes a positive sentiment and label '0' denotes a negative sentiment, our aim is to predict the sentiments of tweets in the test dataset.
 
 # Tweets Preprocessing and Cleaning
 
-You are searching for a document in this office space. In which scenario are you more likely to find the document easily? Of course, in the less cluttered one because each item is kept in its proper place. The data cleaning exercise is quite similar. If the data is arranged in a structured format then it becomes easier to find the right information.
+Imagine searching for a document in a cluttered versus an organized office space. Which scenario would facilitate finding the document more easily? Certainly, the less cluttered one, where each item is in its proper place. Similarly, data cleaning aims to organize and structure the data, making it conducive for analysis.
 
-The preprocessing of the text data is an essential step as it makes the raw text ready for mining, i.e., it becomes easier to extract information from the text and apply machine learning algorithms to it. If we skip this step then there is a higher chance that you are working with noisy and inconsistent data. The objective of this step is to clean noise those are less relevant to find the sentiment of tweets such as punctuation, special characters, numbers, and terms which don’t carry much weightage in context to the text.
-
-In one of the later stages, we will be extracting numeric features from our Twitter text data. This feature space is created using all the unique words present in the entire data. So, if we preprocess our data well, then we would be able to get a better quality feature space.
-
-Let’s first read our data and load the necessary libraries.
+Preprocessing of text data is essential as it prepares raw text for analysis, making it easier to extract information and apply machine learning algorithms. By eliminating noise such as punctuation, special characters, and irrelevant terms, we enhance the quality of our data and subsequent analysis.
 
 # Story Generation and Visualization from Tweets
 
-In this section, we will explore the cleaned tweets text. Exploring and visualizing data, no matter whether its text or any other data, is an essential step in gaining insights. Do not limit yourself to only these methods told in this tutorial, feel free to explore the data as much as possible.
+In this section, we embark on an exploration of cleaned tweet text. Exploring and visualizing data is a crucial step in gaining insights. Let's not confine ourselves to predefined methods; instead, let's explore the data to its fullest extent.
 
-Before we begin exploration, we must think and ask questions related to the data in hand. A few probable questions are as follows:
-
-What are the most common words in the entire dataset?
-What are the most common words in the dataset for negative and positive tweets, respectively?
-How many hashtags are there in a tweet?
-Which trends are associated with my dataset?
-Which trends are associated with either of the sentiments? Are they compatible with the sentiments?
+Before we delve into exploration, let's pose some pertinent questions:
+- What are the most common words in the entire dataset?
+- What are the most common words in the dataset for negative and positive tweets, respectively?
+- How many hashtags are there in a tweet?
+- What trends are associated with our dataset?
+- Are there trends associated with either sentiment? Do they align with the sentiments?
 
 # End Notes
 
-In this article, we learned how to approach a sentiment analysis problem. We started with preprocessing and exploration of data. Then we extracted features from the cleaned text using Bag-of-Words and TF-IDF. Finally, we were able to build a couple of models using both the feature sets to classify the tweets.
+In this article, we delved into the intricacies of sentiment analysis, from preprocessing and exploration of data to feature extraction using Bag-of-Words and TF-IDF. We then utilized these features to build models for tweet classification.
 
-Did you find this article useful? Do you have any useful trick? Did you use any other method for feature extraction? Feel free to discuss your experiences in comments below or on the discussion portal and we’ll be more than happy to discuss.
+Did you find this article informative? Do you have any insights to share? Perhaps you've employed alternative methods for feature extraction? Feel free to engage with us in the comments below or on our discussion portal. We're eager to delve deeper into the conversation!
+
